@@ -65,7 +65,7 @@ body {
 
 /* Hoarding Motion Graphics Simulation */
 .hoarding-bg {
-    background-image: url('/Assets/Smart features 4.gif');
+    background-image: url('/Assets/Smart features 2.jpg');
     background-size: cover;
     background-position: center;
     animation: slideBackground 20s infinite alternate ease-in-out;
