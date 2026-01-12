@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratik Lifestyle - Utility Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="transition-colors duration-300">
+    <div id="app" class="min-h-screen flex flex-col">
+        <header class="bg-card shadow-md py-4 px-6 sticky top-0 z-50 border-b border-color">
+            <nav class="container mx-auto flex justify-between items-center flex-wrap">
+                <div class="flex items-center space-x-2">
+                    <svg class="h-8 w-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19.5 7.5L12 12L4.5 7.5M4.5 16.5L12 21L19.5 16.5M19.5 7.5V16.5M4.5 7.5V16.5M12 12L12 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <a href="#home" class="text-2xl font-bold text-primary">Pratik Lifestyle</a>
+                </div>
+                <div class="block lg:hidden">
+                    <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-text-light border-text-light hover:text-primary hover:border-primary">
+                        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                    </button>
+                </div>
+                <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden" id="nav-content">
+                    <ul class="text-lg lg:flex-grow lg:flex justify-end items-center">
+                        <li><a href="#home" class="block mt-4 lg:inline-block lg:mt-0 text-text-light hover:text-primary px-4 py-2 rounded-md transition-colors duration-200">Home</a></li>
+                        <li><a href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-text-light hover:text-primary px-4 py-2 rounded-md transition-colors duration-200">About</a></li>
+                        <li class="relative group">
+                            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-text-light hover:text-primary px-4 py-2 rounded-md transition-colors duration-200">Brands <i class="fas fa-chevron-down text-xs ml-1"></i></a>
+                            <ul class="absolute hidden group-hover:block bg-card shadow-lg rounded-md mt-2 w-48 py-2 border border-color z-20">
+                                <li><a href="#brand-Workspace" class="block px-4 py-2 text-text-light hover:bg-input-bg rounded-md">Workspace Lifestyle</a></li>
+                                <li><a href="#brand-Aroma" class="block px-4 py-2 text-text-light hover:bg-input-bg rounded-md">Aroma Diffuser</a></li>
+                                <li><a href="#brand-Lighting" class="block px-4 py-2 text-text-light hover:bg-input-bg rounded-md">Mood Lighting</a></li>
+                                <li><a href="#brand-Wellness" class="block px-4 py-2 text-text-light hover:bg-input-bg rounded-md">Wellness Product</a></li>
+                                <li><a href="#brand-Smart Desk" class="block px-4 py-2 text-text-light hover:bg-input-bg rounded-md">Smart Desk Features</a></li>
+    
+                           </ul>
+                        </li>
+                        <li><a href="#features" class="block mt-4 lg:inline-block lg:mt-0 text-text-light hover:text-primary px-4 py-2 rounded-md transition-colors duration-200">Features</a></li>
+                        <li class="relative group">
+                            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-text-light hover:text-primary px-4 py-2 rounded-md transition-colors duration-200">Gallery <i class="fas fa-chevron-down text-xs ml-1"></i></a>
+                            <ul class="absolute hidden group-hover:block bg-card shadow-lg rounded-md mt-2 w-48 py-2 border border-color z-20">
+                                <li><a href="#gallery-2023" class="block px-4 py-2 text-text-light hover:bg-input-bg rounded-md">2023 Models</a></li>
+                                <li><a href="#gallery-2022" class="block px-4 py-2 text-text-light hover:bg-input-bg rounded-md">2022 Models</a></li>
+                                <li><a href="#gallery-2021" class="block px-4 py-2 text-text-light hover:bg-input-bg rounded-md">2021 Models</a></li>
+                                <li><a href="#gallery-older" class="block px-4 py-2 text-text-light hover:bg-input-bg rounded-md">Older Models</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#booking" class="block mt-4 lg:inline-block lg:mt-0 text-text-light hover:text-primary px-4 py-2 rounded-md transition-colors duration-200">Booking</a></li>
+                        <li><a href="#contact" class="block mt-4 lg:inline-block lg:mt-0 text-text-light hover:text-primary px-4 py-2 rounded-md transition-colors duration-200">Contact</a></li>
+                        <li>
+                            <button id="theme-toggle" class="block mt-4 lg:inline-block lg:mt-0 text-text-light hover:text-primary px-4 py-2 rounded-md transition-colors duration-200">
+                                <i class="fas fa-moon" id="theme-icon"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main id="content-area" class="flex-grow">
+        </main>
+
+        <footer class="bg-card py-8 px-6 mt-12 border-t border-color">
+            <div class="container mx-auto text-center text-text-light">
+                <div class="flex justify-center space-x-6 mb-6">
+                    <a href="https://www.facebook.com/DreamerPratik/" target="_blank" class="text-text-light hover:text-primary transition-colors duration-200">
+                        <i class="fab fa-facebook-f text-2xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/adhikari_pratik/" target="_blank" class="text-text-light hover:text-primary transition-colors duration-200">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="text-text-light hover:text-primary transition-colors duration-200">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                    <a href="https://linkedin.com/" target="_blank" class="text-text-light hover:text-primary transition-colors duration-200">
+                        <i class="fab fa-linkedin-in text-2xl"></i>
+                    </a>
+                </div>
+                <div class="mb-4">
+                    <a href="#" class="text-text-light hover:text-primary mx-3">Privacy Policy</a>
+                    <span class="text-text-light">|</span>
+                    <a href="#" class="text-text-light hover:text-primary mx-3">Terms of Service</a>
+                    <span class="text-text-light">|</span>
+                    <a href="#" class="text-text-light hover:text-primary mx-3">Sitemap</a>
+                    <span class="text-text-light">|</span>
+                    <a href="#" class="text-text-light hover:text-primary mx-3">FAQ</a>
+                </div>
+                <p>&copy; 2025 Pratik Lifestyle. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <div id="messageModal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-button" onclick="document.getElementById('messageModal').classList.add('hidden')">&times;</span>
+                <h3 id="modalTitle" class="text-xl font-semibold mb-4 text-primary"></h3>
+                <p id="modalMessage" class="text-text-light"></p>
+                <button onclick="document.getElementById('messageModal').classList.add('hidden')" class="mt-6 px-6 py-2 bg-primary text-white rounded-md hover:bg-secondary-dark transition-colors duration-200">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
