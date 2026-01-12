@@ -246,7 +246,7 @@ function renderLifestyleCards(Lifestyle) {
             <img src="${Lifestyle.image}" alt="${Lifestyle.brand} ${Lifestyle.model}" class="w-full h-48 object-cover">
             <div class="p-6">
                 <h3 class="text-xl font-semibold mb-2 text-primary">${Lifestyle.year} ${Lifestyle.brand} ${Lifestyle.model}</h3>
-                <p class="text-text-light mb-4 font-bold text-lg">RS${car.price.toLocaleString()}</p>
+                <p class="text-text-light mb-4 font-bold text-lg">RS${Lifestyle.price.toLocaleString()}</p>
                 <ul class="text-sm text-gray-500 dark:text-gray-400 mb-4 list-disc list-inside">
                 </ul>
                 <button onclick="showModal('Car Details', 'More details for ${Lifestyle.brand} ${Lifestyle.model} will be shown here. This is a demo.')" class="w-full bg-primary text-white py-2 rounded-md hover:bg-secondary-dark transition-colors duration-200">View Details</button>
@@ -551,7 +551,7 @@ function renderBooking() {
                     
                     <div>
                         <h3 class="text-2xl font-semibold mb-4 text-text-light">1. Select Your Car</h3>
-                        <label for="booking-car" class="block text-sm font-medium text-text-light mb-2">Choose a car:</label>
+                        <label for="booking-car" class="block text-sm font-medium text-text-light mb-2">Choose a Lifestyle products:</label>
                         <select id="booking-car" name="car" class="w-full p-3 border border-color rounded-md input-bg" required>
                             <option value="">-- Select a Car --</option>
                             ${LifestyleData.map(Lifestyle => `<option value="${Lifestyle.year} ${Lifestyle.brand} ${Lifestyle.model} (RS${Lifestyle.price.toLocaleString()})">${Lifestyle.year} ${Lifestyle.brand} ${Lifestyle.model}</option>`).join('')}
