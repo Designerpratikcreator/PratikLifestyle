@@ -310,7 +310,7 @@ function renderHome() {
 function renderAbout() {
     contentArea.innerHTML = `
         <section id="about" class="container mx-auto py-16 px-6">
-            <h2 class="text-4xl font-bold text-center mb-12 text-primary">About Pratik Automobile</h2>
+            <h2 class="text-4xl font-bold text-center mb-12 text-primary">About Pratik Lifestyle</h2>
             <div class="bg-card p-8 rounded-lg shadow-lg border border-color max-w-4xl mx-auto">
                 <p class="text-lg leading-relaxed mb-6 text-text-light">
                     Welcome to Pratik Lifestyle, your trusted destination for high-quality reconditioned vehicles.
