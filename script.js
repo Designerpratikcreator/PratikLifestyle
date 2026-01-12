@@ -268,7 +268,7 @@ function renderHome() {
                     Take Your Lifestyle Products Today
                 </h1>
                 <p class="text-lg md:text-xl mb-8 max-w-2xl drop-shadow-md">
-                    Discover quality lifestyle producta from top brands, meticulously inspected for your peace of mind.
+                    Discover quality lifestyle products from top brands, meticulously inspected for your peace of mind.
                 </p>
                 <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                     <a href="#gallery" class="bg-primary text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-secondary-dark transition-all duration-300 transform hover:scale-105 shadow-lg">
@@ -313,7 +313,7 @@ function renderAbout() {
             <h2 class="text-4xl font-bold text-center mb-12 text-primary">About Pratik Lifestyle</h2>
             <div class="bg-card p-8 rounded-lg shadow-lg border border-color max-w-4xl mx-auto">
                 <p class="text-lg leading-relaxed mb-6 text-text-light">
-                    Welcome to Pratik Lifestyle, your trusted destination for high-quality reconditioned vehicles.
+                    Welcome to Pratik Lifestyle, your trusted destination for high-quality LIFESTYLE PRODUCTS.
                     With years of experience in the Lifestyle Product Services, we are committed to providing our customers
                     with reliable lifestyle products and exceptional service. Our mission is to make your lifestyle buying journey
                     as smooth, transparent, and enjoyable as possible.
