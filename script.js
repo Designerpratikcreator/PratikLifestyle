@@ -233,9 +233,9 @@ function toggleTheme() {
 }
 
 /**
- * Renders the car cards for a given list of cars.
- * @param {Array} cars - Array of car objects to display.
- * @returns {string} HTML string of car cards.
+ * Renders the Lifestyle cards for a given list of cars.
+ * @param {Array} cars - Array of Lifestyle objects to display.
+ * @returns {string} HTML string of Lifestyle cards.
  */
 function renderLifestyleCards(Lifestyle) {
     if (Lifestyle.length === 0) {
