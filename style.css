@@ -72,10 +72,10 @@ body {
 }
 
 @keyframes slideBackground {
-    0% { background-image: url('/Assets/Wellness product 5.jpg');}
+    0% { background-image: url('/Assets/Smart features 2.jpg');}
     33% { background-image: url('/Assets/aroma diffuser.jpg');}
     66% { background-image: url('/Assets/Mood lighting 1.jpeg');}
-    100% { background-image: url('/Assets/Smart festures 2.jpg');}
+    100% { background-image: url('/Assets/Smart features 2.jpg');}
 }
 
 /* Custom range slider styling */
