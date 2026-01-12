@@ -1,185 +1,173 @@
 // --- Data Structure for Cars ---
-const carsData = [
+const LifestyleData = [
     {
-        id: 'honda-civic-2022',
-        brand: 'Honda',
-        model: 'Civic',
+        id: 'Workspace Lifestyle',
+        brand: 'Workspace',
+        model: 'Desk',
         year: 2022,
-        mileage: '15,000 km',
-        engine: '1.5L Turbo',
-        transmission: 'Automatic',
-        features: ['Sunroof', 'Leather Seats', 'Apple CarPlay', 'Lane Keep Assist'],
-        price: 3500000,
-        image: '/Assets/Honda Civic.jpg'
+        price: 40000,
+        image: '/Assets/workspace lifestyle.jpeg'
     },
     {
-        id: 'honda-crv-2021',
-        brand: 'Honda',
-        model: 'CR-V',
-        year: 2021,
-        mileage: '22,000 km',
-        engine: '2.0L i-VTEC',
-        transmission: 'Automatic',
-        features: ['AWD', 'Panoramic Roof', 'Adaptive Cruise Control'],
-        price: 9500000,
-        image: '/Assets/Honda crv.jpg'
+        id: 'Workspace Lifestyle',
+        brand: 'Workspace',
+        model: 'Desk',
+        price: 45000,
+        image: '/Assets/workspace lifestyle 4.jpg'
     },
     {
-        id: 'mitsubishi-pajero-2020',
-        brand: 'Mitsubishi',
-        model: 'Pajero',
+        id: 'Workspace Lifestyle',
+        brand: 'Workspace',
+        model: 'Desk',
         year: 2020,
-        mileage: '35,000 km',
-        engine: '3.2L Diesel',
-        transmission: 'Automatic',
-        features: ['4x4', 'Off-road Package', '7-Seater'],
-        price: 18000000,
-        image: '/Assets/Mitsubishi pajero.jpg'
+        price: 35000,
+        image: '/Assets/workspace lifestyle 2.jpeg'
     },
     {
-        id: 'toyota-camry-2023',
-        brand: 'Toyota',
-        model: 'Camry',
+        id: 'Workspace Lifestyle',
+        brand: 'Workspace',
+        model: 'Desk',
         year: 2023,
-        mileage: '8,000 km',
-        engine: '2.5L Hybrid',
-        transmission: 'CVT',
-        features: ['Hybrid System', 'Blind Spot Monitor', 'JBL Audio'],
-        price: 13200000,
-        image: '/Assets/Toyota camry.jpg'
+        price: 32000,
+        image: '/Assets/workspace lifestyle 3.jpg'
     },
     {
-        id: 'toyota-fortuner-2022',
-        brand: 'Toyota',
-        model: 'Fortuner',
+        id: 'Aroma Diffuser',
+        brand: 'Aroma',
+        model: 'Diffuser',
         year: 2022,
-        mileage: '18,000 km',
-        engine: '2.8L Diesel',
-        transmission: 'Automatic',
-        features: ['7-Seater', 'Leather Interior', 'LED Headlights'],
-        price: 20000000,
-        image: '/Assets/Toyota fortuner.jpg'
+        price: 5000,
+        image: '/Assets/aroma diffuser.jpg'
     },
     {
-        id: 'hyundai-tucson-2021',
-        brand: 'Hyundai',
-        model: 'Tucson',
+        id: 'Aroma Diffuser',
+        brand: 'Aroma',
+        model: 'Diffuser',
         year: 2021,
-        mileage: '25,000 km',
-        engine: '2.0L Petrol',
-        transmission: 'Automatic',
-        features: ['Panoramic Sunroof', 'Ventilated Seats', 'Wireless Charging'],
-        price: 7000000,
-        image: '/Assets/Hyundai Tucson .jpg'
+        price: 4850,
+        image: '/Assets/aroma diffuser.jpeg'
     },
     {
-        id: 'porsche-911-2020',
-        brand: 'Porsche',
-        model: '911 Carrera',
+        id: 'Aroma Diffuser',
+        brand: 'Aroma',
+        model: 'Diffuser',
         year: 2020,
-        mileage: '10,000 km',
-        engine: '3.0L Twin-Turbo',
-        transmission: 'PDK',
-        features: ['Sport Chrono Package', 'Bose Surround Sound', 'Carbon Ceramic Brakes'],
-        price: 17100000,
-        image: '/Assets/Porsche 911.jpeg'
+        price: 5500,
+        image: '/Assets/aroma diffuser 3.jpeg'
     },
     {
-        id: 'landrover-discovery-2022',
-        brand: 'Land Rover',
-        model: 'Discovery',
+        id: 'Aroma Diffuser',
+        brand: 'Aroma',
+        model: 'Diffuser',
         year: 2022,
-        mileage: '12,000 km',
-        engine: '3.0L Ingenium',
-        transmission: 'Automatic',
-        features: ['Air Suspension', 'Meridian Sound System', 'Terrain Response 2'],
-        price: 20000000,
-        image: '/Assets/Land rover.jpg'
+        price: 4950,
+        image: '/Assets/aroma diffuser 4.jpeg'
     },
     {
-        id: 'defenders-90-2021',
-        brand: 'Defenders', // Assuming 'Defenders' is treated as a brand here
-        model: 'Defender 90',
+        id: 'Aroma Diffuser',
+        brand: 'Aroma', // 
+        model: 'Diffuser',
         year: 2021,
-        mileage: '18,000 km',
-        engine: '3.0L P400',
-        transmission: 'Automatic',
-        features: ['Off-Road Tires', 'Winch', 'Expedition Roof Rack'],
-        price: 40000000,
-        image: '/Assets/Defender.jpg'
+        price: 5500,
+        image: '/Assets/aroma diffuser 5.jpeg'
     },
     {
-        id: 'jeep-wrangler-2020',
-        brand: 'Jeep',
-        model: 'Wrangler Rubicon',
+        id: 'Mood Lighting',
+        brand: 'Room Light',
+        model: 'Ambience',
         year: 2020,
-        mileage: '28,000 km',
-        engine: '3.6L Pentastar',
-        transmission: 'Automatic',
-        features: ['Removable Roof', 'Off-Road Suspension', 'Locking Differentials'],
-        price: 25000000,
-        image: '/Assets/Jeep.jpg'
+        price: 25000,
+        image: '/Assets/Mood lighting 1.jpg'
     },
     {
-        id: 'ford-f150-2023',
-        brand: 'Ford',
-        model: 'F-150 Raptor',
+        id: 'Mood Lighting',
+        brand: 'Room Light',
+        model: 'Ambience',
         year: 2023,
-        mileage: '5,000 km',
-        engine: '3.5L EcoBoost',
-        transmission: '10-Speed Automatic',
-        features: ['Fox Racing Shocks', 'Trail Control', 'Pro Power Onboard'],
-        price: 22000000,
-        image: '/Assets/Ford.jpg'
+        price: 22000,
+        image: '/Assets/Mood lighting 2.jpg'
     },
     {
-        id: 'toyota-prius-2021',
-        brand: 'Toyota',
-        model: 'Prius',
+        id: 'Mood Lighting',
+        brand: 'Room Light',
+        model: 'Ambience',
         year: 2021,
-        mileage: '20,000 km',
-        engine: '1.8L Hybrid',
-        transmission: 'CVT',
-        features: ['Excellent Fuel Economy', 'Toyota Safety Sense', 'Heated Seats'],
-        price: 6000000,
-        image: '/Assets/Toyota Prius.jpeg'
+        price: 60000,
+        image: '/Assets/.Mood lighting 3.jpg'
     },
     {
-        id: 'honda-accord-2020',
-        brand: 'Honda',
-        model: 'Accord',
+        id: 'Mood Lighting',
+        brand: 'Room Light',
+        model: 'Ambience',
         year: 2020,
-        mileage: '30,000 km',
-        engine: '2.0L Turbo',
-        transmission: 'Automatic',
-        features: ['Honda Sensing', 'Wireless Phone Charger', 'Heads-Up Display'],
-        price: 7250000,
-        image: '/Assets/Honda Accord 2020.jpg'
+        price: 40000,
+        image: '/Assets/Mood lighting 4.jpg'
     },
     {
-        id: 'mitsubishi-outlander-2022',
-        brand: 'Mitsubishi',
-        model: 'Outlander',
+        id: 'Wellness Product',
+        brand: 'Wellness',
+        model: 'Backbone Posture',
         year: 2022,
-        mileage: '10,000 km',
-        engine: '2.5L MIVEC',
-        transmission: 'CVT',
-        features: ['Super All-Wheel Control', '3rd Row Seating', 'Bose Premium Audio'],
-        price: 12000000,
-        image: '/Assets/Mitsubishi pajero.jpg'
+        price: 12000,
+        image: '/Assets/Wellness product 1.jpg'
     },
     {
-        id: 'hyundai-elantra-2023',
-        brand: 'Hyundai',
-        model: 'Elantra',
+        id: 'Wellness Product',
+        brand: 'Wellness',
+        model: 'Chair Posture',
         year: 2023,
-        mileage: '7,000 km',
-        engine: '2.0L MPI',
-        transmission: 'IVT',
-        features: ['Digital Key', 'Smart Trunk', 'LED Daytime Running Lights'],
-        price: 2550000,
-        image: '/Assets/Hyundai Elantra.jpeg'
+        price: 25500,
+        image: '/Assets/Wellness product 2.jpg'
     },
+    {
+        id: 'Wellness Product',
+        brand: 'Wellness',
+        model: 'Head Posture',
+        year: 2024,
+        price: 20000,
+        image: '/Assets/Wellness product 3.jpg' 
+    },
+    {
+        id: 'Wellness Product',
+        brand: 'Wellness',
+        model: 'Head Posture',
+        year: 2022,
+        price: 22000,
+        image: '/Assets/Wellness product 4.jpg'
+    },
+    { 
+        id: 'Wellness Product',
+        brand: 'Wellness',
+        model: 'Head Posture',
+        year: 2023,
+        price: 20000,
+        image: '/Assets/Wellness product 5.jpg'
+    },
+    {
+        id: 'Smart Desk Features',
+        brand: 'Smart',
+        model: 'Functional Desk',
+        year: 2024,
+        price: 21000,
+        image:'/Assets/Smart Feature 1.jpg'
+    },
+    {
+        id: 'Smart Desk Features',
+        brand: 'Smart',
+        model: 'Functional Desk',
+        year: 2024,
+        price: 21000,
+        image:'/Assets/Smart features 2.jpg'
+    },
+    {
+        id: 'Smart Desk Features',
+        brand: 'Smart',
+        model: 'Functional Desk',
+        year: 2024,
+        price: 21000,
+        image:'/Assets/Smart feature 3.jpg'
+    },
+    
 ];
 
 // --- Global Variables and DOM Elements ---
@@ -193,7 +181,7 @@ const modalTitle = document.getElementById('modalTitle');
 const modalMessage = document.getElementById('modalMessage');
 
 let minPrice = 0;
-let maxPrice = 50000000; // Max price in our dataset
+let maxPrice = 500000; // Max price in our dataset
 let currentMinPrice = 0;
 let currentMaxPrice = maxPrice;
 
@@ -249,23 +237,19 @@ function toggleTheme() {
  * @param {Array} cars - Array of car objects to display.
  * @returns {string} HTML string of car cards.
  */
-function renderCarCards(cars) {
-    if (cars.length === 0) {
+function renderLifestyleCards(Lifestyle) {
+    if (Lifestyle.length === 0) {
         return `<p class="text-center text-xl py-10">No cars found matching your criteria. Please adjust your filters.</p>`;
     }
-    return cars.map(car => `
+    return Lifestyle.map(Lifestyle => `
         <div class="bg-card rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 border border-color">
-            <img src="${car.image}" alt="${car.brand} ${car.model}" class="w-full h-48 object-cover">
+            <img src="${Lifestyle.image}" alt="${Lifestyle.brand} ${Lifestyle.model}" class="w-full h-48 object-cover">
             <div class="p-6">
-                <h3 class="text-xl font-semibold mb-2 text-primary">${car.year} ${car.brand} ${car.model}</h3>
+                <h3 class="text-xl font-semibold mb-2 text-primary">${Lifestyle.year} ${Lifestyle.brand} ${Lifestyle.model}</h3>
                 <p class="text-text-light mb-4 font-bold text-lg">RS${car.price.toLocaleString()}</p>
                 <ul class="text-sm text-gray-500 dark:text-gray-400 mb-4 list-disc list-inside">
-                    <li>Mileage: ${car.mileage}</li>
-                    <li>Engine: ${car.engine}</li>
-                    <li>Transmission: ${car.transmission}</li>
-                    <li>Features: ${car.features.slice(0, 2).join(', ')}${car.features.length > 2 ? '...' : ''}</li>
                 </ul>
-                <button onclick="showModal('Car Details', 'More details for ${car.brand} ${car.model} will be shown here. This is a demo.')" class="w-full bg-primary text-white py-2 rounded-md hover:bg-secondary-dark transition-colors duration-200">View Details</button>
+                <button onclick="showModal('Car Details', 'More details for ${Lifestyle.brand} ${Lifestyle.model} will be shown here. This is a demo.')" class="w-full bg-primary text-white py-2 rounded-md hover:bg-secondary-dark transition-colors duration-200">View Details</button>
             </div>
         </div>
     `).join('');
@@ -281,29 +265,29 @@ function renderHome() {
         <section id="home" class="hoarding-bg relative h-[70vh] flex items-center justify-center text-white text-center rounded-b-lg overflow-hidden shadow-xl">
             <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center p-6">
                 <h1 class="text-5xl md:text-6xl font-extrabold mb-4 drop-shadow-lg leading-tight">
-                    Drive Your Dream Car Today
+                    Take Your Lifestyle Products Today
                 </h1>
                 <p class="text-lg md:text-xl mb-8 max-w-2xl drop-shadow-md">
-                    Discover quality reconditioned automobiles from top brands, meticulously inspected for your peace of mind.
+                    Discover quality lifestyle producta from top brands, meticulously inspected for your peace of mind.
                 </p>
                 <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                     <a href="#gallery" class="bg-primary text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-secondary-dark transition-all duration-300 transform hover:scale-105 shadow-lg">
-                        Browse Our Cars
+                        Browse Our Lifestyle Products
                     </a>
                     <a href="#booking" class="bg-white text-primary py-3 px-8 rounded-full text-lg font-semibold hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 shadow-lg">
-                        Book a Test Drive
+                        Book a LifestyleProducts
                     </a>
                 </div>
             </div>
         </section>
 
         <section class="container mx-auto py-16 px-6">
-            <h2 class="text-4xl font-bold text-center mb-12 text-primary">Why Choose Pratik Automobile?</h2>
+            <h2 class="text-4xl font-bold text-center mb-12 text-primary">Why Choose Pratik Lifestyle?</h2>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-card p-8 rounded-lg shadow-md text-center border border-color transform hover:scale-105 transition-transform duration-300">
                     <i class="fas fa-check-circle text-5xl text-primary mb-4"></i>
                     <h3 class="text-2xl font-semibold mb-3 text-text-light">Quality Assured</h3>
-                    <p class="text-gray-600 dark:text-gray-400">Every vehicle undergoes rigorous multi-point inspection.</p>
+                    <p class="text-gray-600 dark:text-gray-400">Every product undergoes rigorous multi-point inspection.</p>
                 </div>
                 <div class="bg-card p-8 rounded-lg shadow-md text-center border border-color transform hover:scale-105 transition-transform duration-300">
                     <i class="fas fa-tags text-5xl text-primary mb-4"></i>
@@ -329,22 +313,20 @@ function renderAbout() {
             <h2 class="text-4xl font-bold text-center mb-12 text-primary">About Pratik Automobile</h2>
             <div class="bg-card p-8 rounded-lg shadow-lg border border-color max-w-4xl mx-auto">
                 <p class="text-lg leading-relaxed mb-6 text-text-light">
-                    Welcome to Pratik Automobile, your trusted destination for high-quality reconditioned vehicles.
-                    With years of experience in the automotive industry, we are committed to providing our customers
-                    with reliable cars and exceptional service. Our mission is to make your car buying journey
+                    Welcome to Pratik Lifestyle, your trusted destination for high-quality reconditioned vehicles.
+                    With years of experience in the Lifestyle Product Services, we are committed to providing our customers
+                    with reliable lifestyle products and exceptional service. Our mission is to make your lifestyle buying journey
                     as smooth, transparent, and enjoyable as possible.
                 </p>
                 <p class="text-lg leading-relaxed mb-6 text-text-light">
-                    At Pratik Automobile, every vehicle in our inventory undergoes a rigorous multi-point inspection
-                    by certified technicians. We ensure that each car meets our stringent standards for safety,
-                    performance, and reliability before it reaches our showroom. We believe in transparency,
-                    providing you with comprehensive vehicle history reports and detailed information about each car.
+                    At Pratik Lifestyle, every products in our warehouse undergoes a rigorous multi-point inspection
+                    by certified human resources. We ensure that each products meets our certified standards for safety,
+                    performance, and reliability before it reaches our warehouse. We believe in transparency,
+                    providing you with comprehensive products history reports and detailed information about each lifestyle products.
                 </p>
                 <p class="text-lg leading-relaxed text-text-light">
-                    Our diverse selection includes popular models from top brands like Honda, Toyota, Mitsubishi,
-                    Hyundai, and luxury marques such as Porsche, Land Rover, and Jeep. Whether you're looking for
-                    a family SUV, a fuel-efficient sedan, or a powerful off-roader, Pratik Automobile has something
-                    to suit every need and budget. Come visit us and experience the Pratik Automobile difference!
+                    Our diverse selection includes popular models from top brands. Pratik Lifestyle has something
+                    to suit every need and budget. Come visit us and experience the Pratik Lifestyle difference!
                 </p>
             </div>
         </section>
@@ -362,13 +344,13 @@ function renderBrandPage(brandName) {
             <h2 class="text-4xl font-bold text-center mb-12 text-primary">${brandName} Reconditioned Cars</h2>
             <div class="bg-card p-8 rounded-lg shadow-lg border border-color mb-12 max-w-4xl mx-auto">
                 <p class="text-lg leading-relaxed text-text-light">
-                    Explore our curated selection of high-quality reconditioned ${brandName} vehicles.
-                    Known for their reliability, innovation, and performance, ${brandName} cars offer exceptional value.
-                    Each vehicle has undergone our comprehensive inspection process to ensure it meets our rigorous standards.
+                    Explore our curated selection of high-quality products ${brandName} lifestyle.
+                    Known for their reliability, innovation, and performance, ${brandName} lifestyle offer exceptional value.
+                    Each products has undergone our comprehensive inspection process to ensure it meets our rigorous standards.
                 </p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                ${renderCarCards(filteredCars)}
+                ${renderLifestyleCards(filteredLifestyle)}
             </div>
         </section>
     `;
@@ -385,7 +367,7 @@ function renderFeatures() {
                 <div class="bg-card p-8 rounded-lg shadow-md border border-color transform hover:scale-105 transition-transform duration-300">
                     <i class="fas fa-car-alt text-5xl text-primary mb-4"></i>
                     <h3 class="text-2xl font-semibold mb-3 text-text-light">Rigorous 150-Point Inspection</h3>
-                    <p class="text-gray-600 dark:text-gray-400">Every vehicle undergoes a meticulous check covering mechanical, electrical, and cosmetic aspects to ensure peak condition.</p>
+                    <p class="text-gray-600 dark:text-gray-400">Every products undergoes a meticulous check lifestyle aspects to ensure peak condition.</p>
                 </div>
                 <div class="bg-card p-8 rounded-lg shadow-md border border-color transform hover:scale-105 transition-transform duration-300">
                     <i class="fas fa-shield-alt text-5xl text-primary mb-4"></i>
@@ -394,18 +376,8 @@ function renderFeatures() {
                 </div>
                 <div class="bg-card p-8 rounded-lg shadow-md border border-color transform hover:scale-105 transition-transform duration-300">
                     <i class="fas fa-file-invoice text-5xl text-primary mb-4"></i>
-                    <h3 class="text-2xl font-semibold mb-3 text-text-light">Transparent Vehicle History</h3>
-                    <p class="text-gray-600 dark:text-gray-400">Access detailed history reports for every car, including previous ownership, service records, and accident history.</p>
-                </div>
-                <div class="bg-card p-8 rounded-lg shadow-md border border-color transform hover:scale-105 transition-transform duration-300">
-                    <i class="fas fa-handshake text-5xl text-primary mb-4"></i>
-                    <h3 class="text-2xl font-semibold mb-3 text-text-light">Flexible Financing Solutions</h3>
-                    <p class="text-gray-600 dark:text-gray-400">Our finance experts work with you to find the best loan options tailored to your budget.</p>
-                </div>
-                <div class="bg-card p-8 rounded-lg shadow-md border border-color transform hover:scale-105 transition-transform duration-300">
-                    <i class="fas fa-exchange-alt text-5xl text-primary mb-4"></i>
-                    <h3 class="text-2xl font-semibold mb-3 text-text-light">Trade-In Assistance</h3>
-                    <p class="text-gray-600 dark:text-gray-400">Get a fair valuation for your current vehicle and seamlessly trade it in towards your new purchase.</p>
+                    <h3 class="text-2xl font-semibold mb-3 text-text-light">Transparent Products History</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Access detailed history reports for every products, including previous ownership, service records, and default history.</p>
                 </div>
                 <div class="bg-card p-8 rounded-lg shadow-md border border-color transform hover:scale-105 transition-transform duration-300">
                     <i class="fas fa-map-marker-alt text-5xl text-primary mb-4"></i>
@@ -422,25 +394,25 @@ function renderFeatures() {
  * @param {number|string} filterYear - The year to filter by, or 'all' for no year filter.
  */
 function renderGallery(filterYear = 'all') {
-    let filteredCars = carsData;
+    let filteredLifestyle = LifestyleData;
 
     if (filterYear !== 'all') {
-        filteredCars = filteredCars.filter(car => car.year === parseInt(filterYear));
+        filteredLifestyle = filteredCars.filter(lifestyle => lifestyle.year === parseInt(filterYear));
     }
 
     // Apply price filter
-    filteredCars = filteredCars.filter(car => car.price >= currentMinPrice && car.price <= currentMaxPrice);
+    filteredLifestyle = filteredLifestyle.filter(car => Lifestyle.price >= currentMinPrice && Lifestyle.price <= currentMaxPrice);
 
     contentArea.innerHTML = `
         <section id="gallery" class="container mx-auto py-16 px-6">
-            <h2 class="text-4xl font-bold text-center mb-12 text-primary">Our Car Gallery</h2>
+            <h2 class="text-4xl font-bold text-center mb-12 text-primary">Our Lifestyle Gallery</h2>
             <div class="bg-card p-8 rounded-lg shadow-lg border border-color mb-12 max-w-4xl mx-auto">
                 <div class="flex flex-col md:flex-row md:items-center justify-between mb-6 space-y-4 md:space-y-0">
                     <div class="w-full md:w-1/3">
                         <label for="year-filter" class="block text-sm font-medium text-text-light mb-2">Filter by Year:</label>
                         <select id="year-filter" class="block w-full p-3 border border-color rounded-md input-bg focus:outline-none focus:ring-2 focus:ring-primary">
                             <option value="all">All Years</option>
-                            ${[...new Set(carsData.map(car => car.year))].sort((a, b) => b - a).map(year => `
+                            ${[...new Set(LifestyleData.map(Lifestyle => Lifestyle.year))].sort((a, b) => b - a).map(year => `
                                 <option value="${year}" ${year == filterYear ? 'selected' : ''}>${year} Models</option>
                             `).join('')}
                         </select>
@@ -455,8 +427,8 @@ function renderGallery(filterYear = 'all') {
                     </div>
                 </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="gallery-car-list">
-                ${renderCarCards(filteredCars)}
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="gallery-Lifestyle-list">
+                ${renderLifestyleCards(filteredCars)}
             </div>
         </section>
     `;
@@ -573,7 +545,7 @@ function initPriceSlider() {
 function renderBooking() {
     contentArea.innerHTML = `
         <section id="booking" class="container mx-auto py-16 px-6">
-            <h2 class="text-4xl font-bold text-center mb-12 text-primary">Book Your Dream Car</h2>
+            <h2 class="text-4xl font-bold text-center mb-12 text-primary">Book Your Lifestyle Products</h2>
             <div class="bg-card p-8 rounded-lg shadow-lg border border-color max-w-3xl mx-auto">
                 <form id="booking-form" class="space-y-6" action="https://formspree.io/f/mjkorllj" method="POST">
                     
@@ -582,7 +554,7 @@ function renderBooking() {
                         <label for="booking-car" class="block text-sm font-medium text-text-light mb-2">Choose a car:</label>
                         <select id="booking-car" name="car" class="w-full p-3 border border-color rounded-md input-bg" required>
                             <option value="">-- Select a Car --</option>
-                            ${carsData.map(car => `<option value="${car.year} ${car.brand} ${car.model} (RS${car.price.toLocaleString()})">${car.year} ${car.brand} ${car.model}</option>`).join('')}
+                            ${LifestyleData.map(Lifestyle => `<option value="${Lifestyle.year} ${Lifestyle.brand} ${Lifestyle.model} (RS${Lifestyle.price.toLocaleString()})">${Lifestyle.year} ${Lifestyle.brand} ${Lifestyle.model}</option>`).join('')}
                         </select>
                     </div>
 
@@ -641,7 +613,7 @@ function renderBooking() {
     document.getElementById('booking-form').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent default form submission to handle with JS
 
-        const selectedCar = document.getElementById('booking-car').value;
+        const selectedLifestyle = document.getElementById('booking-Lifestyleproduct').value;
         const fullName = document.getElementById('full-name').value;
         const email = document.getElementById('email').value;
         const phone = document.getElementById('phone').value;
@@ -794,7 +766,7 @@ function renderFeedbackSection() {
                             </div>
                             <span class="ml-3 font-semibold text-text-light">Jane S.</span>
                         </div>
-                        <p class="text-gray-700 dark:text-gray-300">"Smooth process and friendly staff. Highly recommend Pratik Automobile."</p>
+                        <p class="text-gray-700 dark:text-gray-300">"Smooth process and friendly staff. Highly recommend Pratik Lifestyle."</p>
                     </div>
                 </div>
             </div>
@@ -880,15 +852,11 @@ const routes = {
     '#gallery-older': () => renderGallery('older'), // You might want to define 'older' logic, currently shows all
     '#booking': renderBooking,
     '#contact': renderContact,
-    '#brand-honda': () => renderBrandPage('Honda'),
-    '#brand-mitsubishi': () => renderBrandPage('Mitsubishi'),
-    '#brand-toyota': () => renderBrandPage('Toyota'),
-    '#brand-hyundai': () => renderBrandPage('Hyundai'),
-    '#brand-porsche': () => renderBrandPage('Porsche'),
-    '#brand-landrover': () => renderBrandPage('Land Rover'),
-    '#brand-defenders': () => renderBrandPage('Defenders'),
-    '#brand-jeep': () => renderBrandPage('Jeep'),
-    '#brand-ford': () => renderBrandPage('Ford'),
+    '#brand-Workspace Lifestyle': () => renderBrandPage('Workspace Lifestyle'),
+    '#brand-Aroma Diffuser': () => renderBrandPage('Aroma Diffuser'),
+    '#brand-Mood Lighting': () => renderBrandPage('Mood Lighting'),
+    '#brand-Wellness Product': () => renderBrandPage('Wellness Product'),
+    '#brand-Smart Desk Features': () => renderBrandPage('Smart Desk Features'),
     // Add more brand routes as needed
 };
 
