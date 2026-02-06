@@ -858,3 +858,11 @@
             setTheme(); // Set initial theme
             handleRoute(); // Load initial content based on hash
         });
+  
+        navToggle.addEventListener('click', () => {
+            navContent.classList.toggle('hidden');
+        });
+
+        themeToggle.addEventListener('click', toggleTheme);
+
+    </script>
