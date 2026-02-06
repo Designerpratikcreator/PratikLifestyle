@@ -8,7 +8,7 @@
                 year: 2022,
                 features: ['Parking,Drainage,24hr water supply,business'],
                 Price: 'Rs 60000000',
-                image: url('/Applications/images/Honda Civic.jpg')
+                image: url('/Applications/images/Gwarko 1.jpg')
             },
             {
                 id: 'Gwarko-2021',
@@ -17,7 +17,7 @@
                 year: 2021,
                 features: ['Parking,Drainage,24hr water supply,business'],
                 price: 'Rs 35000000',
-                image: url('/Applications/images/Honda crv.jpg')
+                image: url('/Applications/images/Gwarko 2.jpg')
             },
             {
                 id: 'Patandhoka-2020',
@@ -26,7 +26,7 @@
                 year: 2020,
                 features: ['Parking,Drainage,24hr water supply,business'],
                 price: 'Rs 35000000',
-                image: url('/Applications/images/Mitsubishi pajero.jpg')
+                image: url('/Applications/images/Patandhoka 1.jpg')
             },
             {
                 id: 'Pulchowk-2023',
@@ -35,7 +35,7 @@
                 year: 2023,
                 features: ['Parking,Drainage,24hr water supply,business'],
                 price: 'Rs 35000000',
-                image: url('/Applications/images/Toyota camry.jpg')
+                image: url('/Applications/images/Pulchowk 1.jpg')
             },
             {
                 id: 'Pulchowk-2022',
@@ -44,7 +44,7 @@
                 year: 2022,
                 features: ['Parking,Drainage,24hr water supply,business'],
                 price: 'Rs 45000000',
-                image: url('/Applications/images/Toyota fortuner.jpg')
+                image: url('/Applications/images/Pulchowk 2.jpg')
             },
           
             {
@@ -54,7 +54,7 @@
                 year: 2020,
                 features: ['Parking,Drainage,24hr water supply,business'],
                 price: 'Rs 50000000',
-                image: url('/Applications/images/Porsche 911.jpeg')
+                image: url('/Applications/images/Satdobato 1.jpg')
             },
             {
                 id: 'Hattiban-2022',
@@ -63,7 +63,7 @@
                 year: 2022,
                 features: ['Parking,Drainage,24hr water supply,business'],
                 price: 'Rs 40000000',
-                image: url('/Applications/images/Land rover.jpg') 
+                image: url('/Applications/images/Hattiban 1.jpg') 
             },
             {
                 id: 'Lagankhel-2021',
@@ -72,7 +72,7 @@
                 year: 2021,
                 features: ['Parking,Drainage,24hr water supply,business'],
                 price: 'Rs 40000000',
-                image: url('/Applications/images/Defender.jpg')
+                image: url('/Applications/images/Lagankhel 1.jpeg')
             },
           
             {
@@ -82,7 +82,7 @@
                 year: 2021,
                 features: ['Parking,Drainage,24hr water supply,business'],
                 price: 'Rs 55000000',
-                image: url('/Applications/images/Toyota Prius.jpeg')
+                image: url('/Applications/images/Ekantakuna 1.jpeg')
             },
             {
                 id: 'Bhaisepati-2020',
@@ -91,7 +91,7 @@
                 year: 2020,
                 features: ['Parking,Drainage,24hr water supply,business'],
                 price: 'Rs 40000000',
-                image: url('/Applications/images/Honda Accord 2020.jpg')
+                image: url('/Applications/images/Bhaisepati 1.jpg')
             },
             {
                 id: 'Jawalakhel-2022',
@@ -100,7 +100,7 @@
                 year: 2022,
                 features: ['Parking,Drainage,24hr water supply,business'],
                 price: 'Rs 50000000',
-                image: url('/Applications/images/Mitsubishi outlander.jpeg')
+                image: url('/Applications/images/Jawalakhel 1.jpeg')
             },
            
         ];
