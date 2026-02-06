@@ -8,7 +8,8 @@
                 year: 2022,
                 features: ['Parking,Drainage,24hr water supply,business'],
                 Price: 'Rs 60000000',
-                imgscr: ('/Assets/images/Gwarko 1.jpg')
+                <img src="/Assets/images/Gwarko 1.jpg">
+                
             },
             {
                 id: 'Gwarko-2021',
@@ -17,7 +18,7 @@
                 year: 2021,
                 features: ['Parking,Drainage,24hr water supply,business'],
                 price: 'Rs 35000000',
-                imgscr: ('/Assets/images/Gwarko 2.jpg')
+                <img src="/Assets/images/Gwarko 2.jpg">
             },
             {
                 id: 'Patandhoka-2020',
@@ -26,7 +27,7 @@
                 year: 2020,
                 features: ['Parking,Drainage,24hr water supply,business'],
                 price: 'Rs 35000000',
-                imgscr: ('/Assets/images/Patandhoka 1.jpg')
+                 <img src="/Assets/images/Patandhoka 1.jpg">
             },
             {
                 id: 'Pulchowk-2023',
@@ -35,7 +36,7 @@
                 year: 2023,
                 features: ['Parking,Drainage,24hr water supply,business'],
                 price: 'Rs 35000000',
-                imgscr: ('/Assets/images/Pulchowk 1.jpg')
+                <img src="/Assets/images/Pulchowk 1.jpg">
             },
             {
                 id: 'Pulchowk-2022',
@@ -44,7 +45,7 @@
                 year: 2022,
                 features: ['Parking,Drainage,24hr water supply,business'],
                 price: 'Rs 45000000',
-                imgscr: ('/Assets/images/Pulchowk 2.jpg')
+                <img src="/Assets/images/Pulchowk 2.jpg">      
             },
           
             {
@@ -54,7 +55,7 @@
                 year: 2020,
                 features: ['Parking,Drainage,24hr water supply,business'],
                 price: 'Rs 50000000',
-                imgscr: ('/Assets/images/Satdobato 1.jpg')
+                <img src="/Assets/images/Satdobato 1.jpg">
             },
             {
                 id: 'Hattiban-2022',
@@ -63,7 +64,7 @@
                 year: 2022,
                 features: ['Parking,Drainage,24hr water supply,business'],
                 price: 'Rs 40000000',
-                imgscr: ('/Assets/images/Hattiban 1.jpg') 
+                <img src="/Assets/images/Hattiban 1.jpg">
             },
             {
                 id: 'Lagankhel-2021',
@@ -72,7 +73,7 @@
                 year: 2021,
                 features: ['Parking,Drainage,24hr water supply,business'],
                 price: 'Rs 40000000',
-                imgscr: ('/Assets/images/Lagankhel 1.jpeg')
+                <img src="/Assets/images/Lagankhel 1.jpeg">
             },
           
             {
@@ -82,7 +83,7 @@
                 year: 2021,
                 features: ['Parking,Drainage,24hr water supply,business'],
                 price: 'Rs 55000000',
-                imgscr: ('/Assets/images/Ekantakuna 1.jpeg')
+                <img src="/Assets/images/Ekantakuna.jpeg"> 
             },
             {
                 id: 'Bhaisepati-2020',
@@ -91,7 +92,7 @@
                 year: 2020,
                 features: ['Parking,Drainage,24hr water supply,business'],
                 price: 'Rs 40000000',
-                imgscr: ('/Assets/images/Bhaisepati 1.jpg')
+                <img src="/Assets/images/Bhaisepati 1.jpg">
             },
             {
                 id: 'Jawalakhel-2022',
@@ -100,7 +101,7 @@
                 year: 2022,
                 features: ['Parking,Drainage,24hr water supply,business'],
                 price: 'Rs 50000000',
-                imgscr: ('/Assets/images/Jawalakhel 1.jpeg')
+                <img src="/Assets/images/Jawalakhel 1.jpeg">
             },
            
         ];
