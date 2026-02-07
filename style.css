@@ -16,9 +16,7 @@
   --border: #334155;
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
@@ -26,6 +24,7 @@ body {
   background: var(--bg);
   color: var(--text);
   transition: background 0.3s, color 0.3s;
+  overflow-x: hidden;
 }
 
 /* NAVBAR */
@@ -37,20 +36,11 @@ body {
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 100;
 }
 
-.navbar nav {
-  display: flex;
-  gap: 1.2rem;
-  align-items: center;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: var(--text);
-  font-weight: 500;
-}
+.navbar nav { display: flex; gap: 1.2rem; align-items: center; }
+.navbar a { text-decoration: none; color: var(--text); font-weight: 500; }
 
 /* HERO */
 .hero {
@@ -58,6 +48,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #334155;
 }
 
 .hoarding-bg {
@@ -67,20 +58,74 @@ body {
 }
 
 @keyframes heroSlide {
-  0% { background-image: url("./images/hero1.jpg"); }
-  50% { background-image: url("./images/hero2.jpg"); }
-  100% { background-image: url("./images/hero3.jpg"); }
+  0%, 100% { background-image: url("Assets/images/Bhaisepati 1.jpg"); }
+  33% { background-image: url("Assets/images/Gwarko 1.jpg"); }
+  66% { background-image: url("Assets/images/Gwarko 2.jpg"); }
 }
 
 .hero-overlay {
-  background: rgba(0,0,0,0.55);
+  background: rgba(0,0,0,0.6);
   padding: 3rem;
   border-radius: 16px;
   text-align: center;
   color: white;
+  backdrop-filter: blur(4px);
 }
 
-/* BUTTONS */
+/* PROPERTY SLIDER */
+.property-card {
+  background: var(--card);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  height: 100%;
+}
+
+.slider-track img {
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
+.slider-btn.prev { left: 10px; }
+.slider-btn.next { right: 10px; }
+
+.card-content { padding: 1.2rem; }
+.card-content h3 { margin: 0; font-size: 1.2rem; }
+.location { color: var(--primary); font-weight: 600; margin: 0.3rem 0; }
+.price { font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem; }
+.description { font-size: 0.9rem; opacity: 0.8; line-height: 1.4; }
+
+/* MODAL & OTHERS */
 .primary-btn {
   background: var(--primary);
   color: white;
@@ -91,62 +136,27 @@ body {
   font-weight: 600;
 }
 
-.primary-btn.full {
-  width: 100%;
-}
-
-/* SECTIONS */
-.section {
-  padding: 4rem 2rem;
-}
-
-.section-alt {
-  background: var(--bg-alt);
-}
-
-.section-title {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-/* PROPERTY GRID */
+.section { padding: 4rem 2rem; }
+.section-alt { background: var(--bg-alt); }
 .property-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
 
-.property-card {
-  background: var(--card);
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
+.center-text { text-align: center; line-height: 1.8; }
 
-.property-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.property-card h3,
-.property-card p {
-  padding: 0 1rem;
-}
-
-/* MODAL */
 .modal {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.7);
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 
-.hidden {
-  display: none;
-}
+.hidden { display: none; }
 
 .modal-box {
   background: var(--card);
@@ -156,24 +166,15 @@ body {
   max-width: 420px;
 }
 
-.modal-box input,
-.modal-box textarea {
+.modal-box input, .modal-box textarea {
   width: 100%;
-  padding: 0.7rem;
-  margin-bottom: 0.8rem;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text);
 }
 
-.close-btn {
-  float: right;
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-/* FOOTER */
-.footer {
-  text-align: center;
-  padding: 1.5rem;
-  border-top: 1px solid var(--border);
-}
+.close-btn { float: right; font-size: 1.5rem; border: none; background: none; cursor: pointer; color: var(--text); }
+.footer { text-align: center; padding: 2rem; border-top: 1px solid var(--border); }
