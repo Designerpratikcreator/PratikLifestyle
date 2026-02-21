@@ -1,23 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Theme Toggle
   const themeToggle = document.getElementById("themeToggle");
-  const modal = document.getElementById("enquiryModal");
-  const openBtn = document.getElementById("openModal");
-  const closeBtn = document.querySelector(".close-btn");
-
-  // --- Theme Toggle ---
   themeToggle.addEventListener("click", () => {
     document.body.classList.toggle("dark");
     themeToggle.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
   });
 
-  // --- Modal Logic ---
-  openBtn.addEventListener("click", () => modal.classList.remove("hidden"));
-  closeBtn.addEventListener("click", () => modal.classList.add("hidden"));
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) modal.classList.add("hidden");
-  });
-
-  // --- Multi-Image Slider Logic ---
+  // Slider Logic for each card
   const propertyCards = document.querySelectorAll(".property-card");
 
   propertyCards.forEach((card) => {
@@ -31,14 +20,24 @@ document.addEventListener("DOMContentLoaded", () => {
       track.style.transform = `translateX(-${index * 100}%)`;
     };
 
-    nextBtn.addEventListener("click", () => {
+    nextBtn.addEventListener("click", (e) => {
+      e.preventDefault();
       index = (index + 1) % images.length;
       updateSlider();
     });
 
-    prevBtn.addEventListener("click", () => {
+    prevBtn.addEventListener("click", (e) => {
+      e.preventDefault();
       index = (index - 1 + images.length) % images.length;
       updateSlider();
     });
+  });
+
+  // Simple Form Submission Handler
+  const buyForm = document.querySelector(".buying-form");
+  buyForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    alert("Thank you for your application! Our agent will contact you soon.");
+    buyForm.reset();
   });
 });
